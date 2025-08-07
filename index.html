@@ -49,16 +49,31 @@
         }
 
         /* Hero Section */
+        /* Hero Section - Desktop and Default */
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        background: url('wedding.jpg') center center / cover no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 768px) {
         .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            background: url('wedding.jpg') center/cover;
-            background-attachment: fixed;
+            /* Remove fixed attachment for better mobile performance */
+            background-attachment: scroll;
+
+            /* Adjust the background position to crop for a portrait view */
+            /* 'top center' focuses the top of the image */
+            /* You can experiment with 'center center' or 'bottom center' */
+            background-position: top center;
         }
+    }
+
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -83,7 +98,7 @@
         }
 
         .hero h1 {
-            font-size: 4rem;
+            font-size: 8rem;
             margin-bottom: 1rem;
             color: #cfccc8;
             font-weight: 300;
@@ -96,11 +111,10 @@
         }
 
         .hero .date {
-            font-size: 1.5rem;
+            font-size: 4rem;
             color: #cfccc8;
             margin-top: 2rem;
             font-style: italic;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .scroll-indicator {
@@ -721,20 +735,20 @@
         setInterval(createParticle, 2000);
 
         // Add some interactive elements
-        document.addEventListener('mousemove', function(e) {
-            const hero = document.querySelector('.hero');
-            const rect = hero.getBoundingClientRect();
+        //document.addEventListener('mousemove', function(e) {
+            //const hero = document.querySelector('.hero');
+            //const rect = hero.getBoundingClientRect();
             
-            if (e.clientY < rect.bottom) {
-                const x = (e.clientX / window.innerWidth) * 100;
-                const y = (e.clientY / window.innerHeight) * 100;
+            //if (e.clientY < rect.bottom) {
+                //const x = (e.clientX / window.innerWidth) * 100;
+                //const y = (e.clientY / window.innerHeight) * 100;
                 
-                hero.style.background = `linear-gradient(135deg, 
-                    rgba(255,182,193,${0.2 + x/1000}) 0%, 
-                    rgba(255,218,185,${0.2 + y/1000}) 50%, 
-                    rgba(240,248,255,0.3) 100%)`;
-            }
-        });
+                //hero.style.background = `linear-gradient(135deg, 
+                    //rgba(255,182,193,${0.2 + x/1000}) 0%, 
+                    //rgba(255,218,185,${0.2 + y/1000}) 50%, 
+                    //rgba(240,248,255,0.3) 100%)`;
+            //}
+        //});
     </script>
 </body>
 </html>
