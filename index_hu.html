@@ -7,23 +7,27 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Meie+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Meie+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">    <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        // <weight>: Use a value from 300 to 700
-// <uniquifier>: Use a unique and descriptive class name
+        /* <weight>: Use a value from 300 to 700
+        <uniquifier>: Use a unique and descriptive class name*/
 
-.cormorant-garamond-<uniquifier> {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+        .dancing-script-regular {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .cormorant-garamond-regular {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
         .meie-script-regular {
             font-family: 'Meie Script', cursive;
@@ -52,7 +56,7 @@
             overflow-x: hidden;
         }
         h1, h2, h3, h4, h5, h6 {
-            font-family: "Meie Script", cursive;
+            font-family: "Dancing Script", cursive;
             font-weight: 700;
         }
 
@@ -532,81 +536,10 @@
             }
         }
 
-        /* Floating particles */
-        .particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        .particle {
-    position: absolute;
-    background: transparent; /* Changed to transparent to build the heart */
-    border-radius: 50%;
-    animation: floatParticle 15s infinite linear;
-    width: 20px; /* Set a specific width for the heart container */
-    height: 18px; /* Set a specific height for the heart container */
-}
-
-.particle::before,
-.particle::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(212, 165, 116, 0.15); /* The color of the heart */
-    border-radius: 50% 50% 0 0;
-}
-
-.particle::before {
-    transform: rotate(-45deg);
-    left: 0;
-    top: 9px; /* Adjust top to position the heart correctly */
-}
-
-.particle::after {
-    transform: rotate(45deg);
-    right: 0;
-    top: 9px; /* Adjust top to position the heart correctly */
-}
-
-/* New CSS rule for the heart's bottom point */
-.particle .heart-point {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(212, 165, 116, 0.15);
-    border-radius: 0 0 50% 50%;
-    left: 0;
-    bottom: -9px;
-    transform: rotate(45deg);
-}
-
-
-        @keyframes floatParticle {
-            0% {
-                transform: translateY(100vh) rotate(0deg);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-100px) rotate(360deg);
-                opacity: 0;
-            }
-        }
+       
     </style>
 </head>
 <body>
-    <div class="particles" id="particles"></div>
 
     <nav class="nav" id="nav">
     <div class="container">
@@ -646,7 +579,7 @@
             <div class="story">
                 <div class="story-content">
                     <div class="story-text">
-                        <p>Szerelmi történetünk hét évvel ezelőtt kezdődött Athénban. Ami egy első randiként indult egy tetőtéri bárban, mára életünk legnagyobb kalandjává nőtte ki magát.</p>
+                        <p>Szerelmünk hét évvel ezelőtt kezdődött Athénban. Ami egy első randiként indult egy tetőtéri bárban, mára életünk legnagyobb kalandjává nőtte ki magát.</p>
 
                         <p>A távkapcsolatunk utazásokkal teli első évei után eljutottunk addig, hogy közös otthonra leltünk és együtt utaztuk be a világot. Minden pillanatot nevetés, fejlődés és végtelen szeretet tölti ki. Támogattuk egymást a kihívásokban, és számtalan örömöt ünnepeltünk együtt.</p>
 
@@ -844,10 +777,10 @@
                     </li>
                     <h3>Heuriger (borozók)</h3>
                     <li>
-                        <strong><a href="https://maps.app.goo.gl/z9xQ7G3hT2yU4R5c9">"Heuriger Wolff"</a></strong> A mi kedvencünk <strong><a href="https://maps.app.goo.gl/Y8sT4jK7hF5vG6c9R">Neustiftben</a></strong>.
+                        <strong><a href="https://maps.app.goo.gl/z9xQ7G3hT2yU4R5c9">"Heuriger Wolff"</a></strong> A mi kedvencünk <strong><a href="https://maps.app.goo.gl/Y8sT4jK7hF5vG6c9R">Neustift-ben</a></strong>.
                     </li>
                     <li>
-                        <strong><a href="https://maps.app.goo.gl/pRJp7LQNj3Pd4KU49">Feuerwehr Wagner</a></strong> A mi kedvencünk <strong><a href="https://maps.app.goo.gl/K8gR6eC7gH5j4V3u8">Grinzingben</a></strong>.
+                        <strong><a href="https://maps.app.goo.gl/pRJp7LQNj3Pd4KU49">Feuerwehr Wagner</a></strong> A mi kedvencünk <strong><a href="https://maps.app.goo.gl/K8gR6eC7gH5j4V3u8">Grinzing-ben</a></strong>.
                     </li>
                     <li>
                         <strong><a href="https://maps.app.goo.gl/yCJTpvXyQJwdeq33A">Stadtheuriger</a></strong> A mi kedvencünk a belvárosban.
@@ -928,42 +861,7 @@
             observer.observe(item);
         });
         
-        // Floating hearts particles
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            
-            const size = Math.random() * 10 + 5; // Hearts between 5px and 15px
-            particle.style.width = `${size}px`;
-            particle.style.height = `${size * 0.9}px`; // Hearts are slightly shorter
-            
-            particle.style.left = `${Math.random() * 100}vw`;
-            particle.style.animationDuration = `${Math.random() * 10 + 10}s`; // 10-20s
-            
-            const heartBefore = document.createElement('div');
-            heartBefore.classList.add('heart-shape');
-            heartBefore.style.transform = 'rotate(-45deg)';
-            heartBefore.style.left = '0';
-            
-            const heartAfter = document.createElement('div');
-            heartAfter.classList.add('heart-shape');
-            heartAfter.style.transform = 'rotate(45deg)';
-            heartAfter.style.right = '0';
-
-            const heartPoint = document.createElement('div');
-            heartPoint.classList.add('heart-point');
-            
-            // To make sure the hearts appear and disappear off-screen
-            particle.style.top = '100vh'; 
-
-            document.getElementById('particles').appendChild(particle);
-
-            particle.addEventListener('animationend', () => {
-                particle.remove();
-            });
-        }
-
-        setInterval(createParticle, 300); // Create a new particle every 300ms
+        
     </script>
 </body>
 </html>
