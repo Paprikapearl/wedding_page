@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angie & Ákos - Our Wedding</title>
+    <title>Angie & Ákos - Az Esküvőnk</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,28 +14,28 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         .meie-script-regular {
-              font-family: 'Meie Script', cursive;
-              font-weight: 400;
-              font-style: normal;
+            font-family: 'Meie Script', cursive;
+            font-weight: 400;
+            font-style: normal;
         }
 
         .tangerine-regular {
-        font-family: "Tangerine", cursive;
-        font-weight: 400;
-        font-style: normal;
+            font-family: "Tangerine", cursive;
+            font-weight: 400;
+            font-style: normal;
         }
 
         .tangerine-bold {
-        font-family: "Tangerine", cursive;
-        font-weight: 700;
-        font-style: normal;
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-style: normal;
         }
 
 
         body {
-            font-family: cursive; 
+            font-family: 'GFS Neohellenic', sans-serif;
             line-height: 1.6;
             color: #0e0a0a;
             background: linear-gradient(135deg, #faf8f5 0%, #f4f1ea 100%);
@@ -455,6 +455,8 @@
         }
 
         /* Footer */
+
+        
         .footer {
             background: #5d4e37;
             color: #faf8f5;
@@ -467,6 +469,26 @@
             color: #d4a574;
             margin-bottom: 1rem;
             animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        /* Style for the footer's container to enable Flexbox */
+        .footer .container {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+            position: relative; /* Needed for positioning the logo */
+        }
+
+        /* Style for the footer logo */
+        .footer-logo {
+            position: absolute;
+            bottom: 5px; /* Position from the bottom */
+            right: 5px;  /* Position from the right */
+        }
+
+        .footer-logo img {
+            height: 100px; /* Adjust the logo size as needed */
+            width: auto;
         }
 
         @keyframes heartbeat {
@@ -580,25 +602,28 @@
     <div class="container">
         
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#details">Details</a></li>
-            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#home">Kezdőlap</a></li>
+            <li><a href="#story">A Történetünk</a></li>
+            <li><a href="#details">Részletek</a></li>
+            <li><a href="#timeline">Idővonal</a></li>
+            <li><a href="#venue">Helyszín</a></li>
+            <li><a href="#gifts">Ajándékok</a></li>
+            <li><a href="#vienna">Bécs</a></li>
         </ul>
 
         <div class="lang-flags">
-            <a href="?lang=en"><img src="flag_uk.png" alt="English" class="flag-icon"></a>
-            <a href="?lang=de"><img src="flag_at.png" alt="Austrian" class="flag-icon"></a>
-            <a href="?lang=hu"><img src="flag_hu.png" alt="Hungarian" class="flag-icon"></a>
-            <a href="?lang=el"><img src="flag_gr.png" alt="Greek" class="flag-icon"></a>
-        </div>
+    <a href="index.html"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English" class="flag-icon"></a>
+    <a href="index_de.html"><img src="https://flagicons.lipis.dev/flags/4x3/at.svg" alt="Deutsch" class="flag-icon"></a>
+    <a href="index_hu.html"><img src="https://flagicons.lipis.dev/flags/4x3/hu.svg" alt="Magyar" class="flag-icon"></a>
+    <a href="index_el.html"><img src="https://flagicons.lipis.dev/flags/4x3/gr.svg" alt="Ελληνικά" class="flag-icon"></a>
+</div>
     </div>
 </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Angie & Ákos</h1>
-            <p class="date">October 10th, 2025</p>
+            <p class="date">2025. október 10.</p>
         </div>
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down"></i>
@@ -607,18 +632,18 @@
 
     <section id="story" class="section">
         <div class="container">
-            <h2>Our Story</h2>
+            <h2>A Történetünk</h2>
             <div class="story">
                 <div class="story-content">
                     <div class="story-text">
-                        <p>Our love story began five years ago at a small coffee shop downtown. What started as a chance encounter over spilled coffee has blossomed into the greatest adventure of our lives.</p>
+                        <p>A mi szerelmi történetünk öt évvel ezelőtt kezdődött egy kis kávézóban a belvárosban. Ami egy véletlen találkozással indult egy kiömlött kávé felett, az életünk legnagyobb kalandjává vált.</p>
                         
-                        <p>From our first date at the local farmers market to traveling the world together, every moment has been filled with laughter, growth, and endless love. We've supported each other through challenges and celebrated countless joys.</p>
+                        <p>Az első randevúnktól a helyi piacon, egészen a közös világkörüli utazásainkig, minden pillanat tele volt nevetéssel, fejlődéssel és határtalan szeretettel. Támogattuk egymást a kihívásokban, és számtalan örömteli pillanatot ünnepeltünk együtt.</p>
                         
-                        <p>Now, we're ready to take the next step in our journey together. We can't wait to celebrate with all of you - the friends and family who have made our story even more beautiful.</p>
+                        <p>Most készen állunk arra, hogy megtegyük a következő lépést a közös utunkon. Alig várjuk, hogy veletek ünnepelhessünk – a barátokkal és a családdal, akik még szebbé tették a történetünket.</p>
                     </div>
                 <div class="story-image">
-                    <img src="AA.jpg" alt="Angie and Akos's love story" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
+                    <img src="AA.jpg" alt="Angie és Ákos szerelmi története" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
                 </div>
                 </div>
             </div>
@@ -627,32 +652,32 @@
 
     <section id="details" class="section">
         <div class="container">
-            <h2>Wedding Details</h2>
+            <h2>Esküvői Részletek</h2>
             <div class="event-details">
                 <div class="event-card">
                     <i class="fas fa-calendar-alt"></i>
-                    <h3>When</h3>
-                    <p><strong>Friday, October 10th, 2025</strong></p>
-                    <p>Start: 5:30 PM</p>
-                    <p>Reception: 7:00 PM</p>
+                    <h3>Mikor</h3>
+                    <p><strong>2025. október 10., péntek</strong></p>
+                    <p>Kezdés: 17:30</p>
+                    <p>Vége: 02:00</p>
                 </div>
                 
                 <div class="event-card">
                     <i class="fas fa-map-marker-alt"></i>
-                    <h3>Where</h3>
+                    <h3>Hol</h3>
                     <a href="https://maps.app.goo.gl/cyCNn8e1fLuieRrw6" target="_blank" rel="noopener noreferrer">
                         <p><strong>Palais Daun Kinsky</strong></p>
                         <p>Freyung 4</p>
-                        <p>1010, Vienna</p>
+                        <p>1010, Bécs</p>
                     </a>
                 </div>
                 
                 <div class="event-card">
-                    <i class="fas fa-tshirt"></i>
-                    <h3>Dress Code</h3>
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Öltözködési Kód</h3>
                     <p><strong>Black Tie</strong></p>
-                    <p>Tux or Dark Suit for Gentlemen,</p>
-                    <p>Evening Gown or Long Dress for Ladies</p>
+                    <p>Szmoking vagy sötét öltöny uraknak,</p>
+                    <p>Estélyi vagy hosszú ruha hölgyeknek</p>
                 </div>
             </div>
         </div>
@@ -660,61 +685,54 @@
 
     <section id="timeline" class="section">
         <div class="container">
-            <h2>Wedding Day Timeline</h2>
+            <h2>Esküvői Program</h2>
             <div class="timeline">
+
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3><i class="fas fa-sun"></i>Getting Ready</h3>
-                        <div class="time">10:00 AM - 2:00 PM</div>
-                        <p>Bridal party and groomsmen get ready at separate locations. Hair, makeup, and final preparations for the big day!</p>
+                        <h3><i class="fas fa-camera"></i>Érkezés a helyszínre</h3>
+                        <div class="time">17:30 - 18:00</div>
+                        <p>Érkezés a Palais-ba, idő a családdal és a barátokkal való beszélgetésre és helykeresésre. A szertartás hamarosan kezdődik.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3><i class="fas fa-camera"></i>First Look & Photos</h3>
-                        <div class="time">2:30 PM - 3:30 PM</div>
-                        <p>Private first look moment between the couple, followed by couple portraits and wedding party photos in the gardens.</p>
+                        <h3><i class="fas fa-heart"></i>Ceremónia</h3>
+                        <div class="time">18:00 - 18:30</div>
+                        <p>Tartsatok velünk, amint fogadalmat teszünk a gyönyörű ovális teremben.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3><i class="fas fa-heart"></i>Ceremony</h3>
-                        <div class="time">4:00 PM - 4:30 PM</div>
-                        <p>Join us as we exchange vows under the beautiful garden arbor. Arrive 15 minutes early for seating.</p>
+                        <h3><i class="fas fa-champagne-glasses"></i>Torta és Üdvözlőital</h3>
+                        <div class="time">18:30 - 19:00</div>
+                        <p>Megszegjük a tortát a hölgyek szalonjában, miközben ti pezsgővel koccintotok velünk.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-camera"></i>Fotózás</h3>
+                        <div class="time">19:00 - 19:30</div>
+                        <p>Készítünk egy nagy csoportképet a díszes lépcsőn.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-utensils"></i>Esküvői Vacsora</h3>
+                        <div class="time">19:30 - 22:00</div>
+                        <p>A Café Central által készített ízletes, háromfogásos menü helyi alapanyagokból, meglepetésekkel kísérve. Helyi borok, sör és víz fogyasztása is lehetséges.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3><i class="fas fa-champagne-glasses"></i>Cocktail Hour</h3>
-                        <div class="time">4:30 PM - 6:00 PM</div>
-                        <p>Enjoy signature cocktails, hors d'oeuvres, and lawn games while we take family photos. Live acoustic music!</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3><i class="fas fa-utensils"></i>Reception Dinner</h3>
-                        <div class="time">6:00 PM - 8:00 PM</div>
-                        <p>A delicious three-course dinner featuring locally sourced ingredients, accompanied by heartfelt toasts and speeches.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3><i class="fas fa-music"></i>Dancing & Celebration</h3>
-                        <div class="time">8:00 PM - 12:00 AM</div>
-                        <p>Let's dance the night away! Live band until 10 PM, then DJ takes over. Late-night snacks served at 10:30 PM.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3><i class="fas fa-sparkles"></i>Grand Finale</h3>
-                        <div class="time">11:45 PM</div>
-                        <p>Sparkler send-off under the stars as we head off to our honeymoon adventure. Don't forget to grab a favor bag!</p>
+                        <h3><i class="fas fa-music"></i>Tánc & Buli</h3>
+                        <div class="time">22:00 - 02:00</div>
+                        <p>A nyitótánccal megnyitjuk a táncparkettet, és kezdetét veszi a buli – úgyhogy ne felejtsétek otthon a tánccipőtöket!</p>
                     </div>
                 </div>
             </div>
@@ -723,20 +741,20 @@
 
     <section id="venue" class="section">
         <div class="container">
-            <h2>The Venue</h2>
+            <h2>A Helyszín</h2>
             <div class="story">
                 <div class="story-content">
                     <div class="story-image">
-                <div class="story-image">
-                    <img src="kinsky.png" alt="The Palais" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
-                </div>
+                    <div class="story-image">
+                        <img src="7_Ovaler Festsaal Trauung I_PDK.jpg" alt="A Palais" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
+                    </div>
                     </div>
                     <div class="story-text">
-                        <p>Our love story began five years ago at a small coffee shop downtown. What started as a chance encounter over spilled coffee has blossomed into the greatest adventure of our lives.</p>
+                        <p>Izgatottan várjuk, hogy Bécs egyik barokk gyöngyszemében, a Palais Daun-Kinsky-ben ünnepelhessünk veletek. Az 1713 és 1719 között Johann Lucas von Hildebrandt által épített, a Belvedere palotát is tervező épület számos arisztokrata család otthonaként, rendőrfőkapitányságként, nagykövetségként és nemzetközi tárgyalások helyszíneként szolgált – mindez azért, hogy felkészüljön a legfontosabb eseményre: az esküvőnkre.</p>
                         
-                        <p>From our first date at the local farmers market to traveling the world together, every moment has been filled with laughter, growth, and endless love. We've supported each other through challenges and celebrated countless joys.</p>
+                        <p>A belvárosban található épület könnyen megközelíthető tömegközlekedéssel és autóval egyaránt. Csupán öt perc sétára van a Herrengasse (U3) és a Schottentor (U2) metróállomásoktól. Utóbbi számos villamosvonalat is kiszolgál. A Stephansplatz (U1) tizenkét perc sétára van. Ha autóval jöttök, a Palais előtti téren van egy <a href="https://maps.app.goo.gl/CY2H9PdNtSEeHNU76" target="_blank" rel="noopener noreferrer">mélygarázs</a> (díjköteles).</p>
                         
-                        <p>Now, we're ready to take the next step in our journey together. We can't wait to celebrate with all of you - the friends and family who have made our story even more beautiful.</p>
+                        <p>Amikor megérkeztek a helyszínre, kérjük, használjátok a főbejárattól balra lévő fő lépcsőt, hogy feljussatok a második emeletre (táblák segítenek majd a tájékozódásban).</p>
                     </div>
                     
                 </div>
@@ -746,56 +764,113 @@
 
     <section id="gifts" class="section">
         <div class="container">
-            <h2>Gifts</h2>
+            <h2>Ajándékok</h2>
             <div class="story">
                 <div class="story-content">
                     <div class="story-text">
-                        <p>Our love story began five years ago at a small coffee shop downtown. What started as a chance encounter over spilled coffee has blossomed into the greatest adventure of our lives.</p>
+                        <p>A ti jelenlétetek már önmagában is ajándék, és nagyra értékeljük, hogy ilyen sokan utaztok messziről, hogy velünk ünnepeljetek.</p>
                         
-                        <p>From our first date at the local farmers market to traveling the world together, every moment has been filled with laughter, growth, and endless love. We've supported each other through challenges and celebrated countless joys.</p>
+                        <p>Öt év együttélés után már minden bútor és konyhai eszköz megvan, amire szükségünk lehet. Az egyetlen dolog, ami hiányzik, az egy olyan otthon, ami igazán a miénk.</p>
                         
-                        <p>Now, we're ready to take the next step in our journey together. We can't wait to celebrate with all of you - the friends and family who have made our story even more beautiful.</p>
+                        <p>Ezért jelenleg az első lakásunkra gyűjtünk, és ha ajándékkal szeretnétek kedveskedni nekünk, a legszívesebben a lakásalapunkba való apró hozzájárulásokat fogadjuk.</p>
                     </div>
-                <div class="story-image">
-                    <img src="AA.jpg" alt="Angie and Akos's love story" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
+                    <div class="story-image">
+                    <img src="wedding.png" alt="A Palais" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
                 </div>
                 </div>
             </div>
         </div>
     </section>
 
-   <section id="vienna" class="section">
+    <section id="vienna" class="section">
         <div class="container">
-            <h2>Our Recommendations in Vienna</h2>
+            <h2>Ajánlásaink Bécshez</h2>
             <div class="story">
                 <div class="story-content">
                     <div class="story-image">
-                <div class="story-image">
-                    <img src="medieval_vienna_transparent_edges.png" alt="The Palais" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
-                </div>
+                    <div class="story-image">
+                        <img src="hofburg.JPG" alt="A Palais" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
+                    </div>
                     </div>
                     <div class="story-text">
-                        <p>Our love story began five years ago at a small coffee shop downtown. What started as a chance encounter over spilled coffee has blossomed into the greatest adventure of our lives.</p>
-                        
-                        <p>From our first date at the local farmers market to traveling the world together, every moment has been filled with laughter, growth, and endless love. We've supported each other through challenges and celebrated countless joys.</p>
-                        
-                        <p>Now, we're ready to take the next step in our journey together. We can't wait to celebrate with all of you - the friends and family who have made our story even more beautiful.</p>
+                        <h1>Múzeumok és történelmi látnivalók Bécsben</h1>
+                        <p>Ha kifejezetten osztrák művészetet szeretnétek látni, ezek a múzeumok kiváló kiindulópontok:</p>
+                        <ul>
+                            <li>
+                                <strong><a href="https://maps.app.goo.gl/9u7q7XvJ3P2vWqXg6">Albertina:</a></strong> Ez a múzeum a klasszikus művészetre fókuszál, olyan híres alkotásokkal, mint Dürer "Fiatal mezeinyula", és gyakran ad otthont időszaki kiállításoknak.
+                            </li>
+                            <li>
+                                <strong><a href="https://maps.app.goo.gl/WcW8sYcQf6gSj4yJ6">Felső-Belvedere:</a></strong> Itt találhatók Gustav Klimt leghíresebb festményei, beleértve "A csókot" is.
+                            </li>
+                            <li>
+                                <strong><a href="https://maps.app.goo.gl/Hw7GqJzQpC6X2xJ6A">Leopold Múzeum:</a></strong> Ez a múzeum az 1900-as évek körüli szecessziós osztrák művészek gyönyörű gyűjteményét mutatja be.
+                            </li>
+                            <li>
+                                <strong><a href="https://maps.app.goo.gl/e7xP3u8x5N5K2V2u6">Hofburg Palota</a></strong>, ahol megtekinthetitek a császári lakosztályokat és a kincstárat, valamint a Világmúzeumot.
+                            </li>
+                            <li>
+                                <strong><a href="https://maps.app.goo.gl/r67t2J8j2E7J4V8v9">Schönbrunn Palota</a></strong>: sétáljatok a gyönyörű kertben és látogassatok el a <strong><a href="https://maps.app.goo.gl/Tq8H6Z4e3E5F7W4u7">Schönbrunni Állatkertbe</a></strong>.
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="story">
+                <div class="story-content">
+                    <div class="story-image">
+                    <div class="story-image">
+                        <img src="coffee.jpg" alt="A Palais" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
                     </div>
-                    
+                    </div>
+                    <div class="story-text">
+                    <h1>Ételek és italok</h1>
+                    Ha osztrák konyhát szeretnétek kóstolni, a legjobb hely egy hagyományos kávéház (Kaffeehaus) vagy egy Heuriger. Az éttermeknél a mindennapi, nemzetközi konyhát kínáló kedvenceinkre koncentráltunk.
+                    <h3>Kávé</h3>
+                    <li>
+                        <strong><a href="https://maps.app.goo.gl/pL2f7E8qP8fC3tF47">Cafe Diglas im Schottenstift</a></strong> Ákos kedvenc klasszikus kávéháza.
+                    </li>
+                    <li>
+                        <strong><a href="https://maps.app.goo.gl/Dp8ZSh94BRTcNb7C8">Goldener Papagei</a></strong> Angie kedvenc modern kávézója.
+                    </li>
+                    <h3>Heuriger (borozók)</h3>
+                    <li>
+                        <strong><a href="https://maps.app.goo.gl/z9xQ7G3hT2yU4R5c9">"Heuriger Wolff"</a></strong> A mi kedvencünk <strong><a href="https://maps.app.goo.gl/Y8sT4jK7hF5vG6c9R">Neustiftben</a></strong>.
+                    </li>
+                    <li>
+                        <strong><a href="https://maps.app.goo.gl/pRJp7LQNj3Pd4KU49">Feuerwehr Wagner</a></strong> A mi kedvencünk <strong><a href="https://maps.app.goo.gl/K8gR6eC7gH5j4V3u8">Grinzingben</a></strong>.
+                    </li>
+                    <li>
+                        <strong><a href="https://maps.app.goo.gl/yCJTpvXyQJwdeq33A">Stadtheuriger</a></strong> A mi kedvencünk a belvárosban.
+                    </li>
+                    <h3>Étterem</h3>
+                    <li>
+                        <strong><a href="https://maps.app.goo.gl/4H9PpAiEviBChoY86">Salonplafond</a></strong> A "csinos" opció.
+                    <li>
+                        <strong><a href="https://maps.app.goo.gl/qL9wR2gA6mN8tF4j8">Ilona Stüberl</a></strong> Ha magyar ételeket szeretnétek kóstolni.
+                    </li>
+                    <li>
+                        <strong><a href="https://maps.app.goo.gl/G6h8K5tJ2P3vW8rQ9">Pizza Riva</a></strong> Számtalan pizzát ettünk már a pizzeriáikban.
+                    </li>
+                    </div>                    
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="hearts">
-                <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
-            </div>
-            <p>We can't wait to celebrate with you!</p>
-            <p>&copy; 2025 Angie & Ákos</p>
+    <div class="container">
+        <div class="hearts">
+            <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
         </div>
-    </footer>
+        <p>Alig várjuk, hogy veletek ünnepelhessünk!</p>
+        <p>© 2025 Angie & Ákos</p>
+
+        <a href="#home" class="footer-logo">
+            <img src="logo.png" alt="Angie & Ákos logó">
+        </a>
+    </div>
+</footer>
+
 
     <script>
         // Smooth scrolling for navigation links
@@ -831,7 +906,7 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
@@ -839,49 +914,46 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.section, .timeline-item').forEach(section => {
-            observer.observe(section);
+        document.querySelectorAll('.section, .timeline-item').forEach(item => {
+            observer.observe(item);
         });
-
-        // Create floating particles
+        
+        // Floating hearts particles
         function createParticle() {
             const particle = document.createElement('div');
             particle.classList.add('particle');
             
-            const size = Math.random() * 10 + 5;
-            const left = Math.random() * 100;
-            const delay = Math.random() * 15;
+            const size = Math.random() * 10 + 5; // Hearts between 5px and 15px
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size * 0.9}px`; // Hearts are slightly shorter
             
-            particle.style.width = size + 'px';
-            particle.style.height = size + 'px';
-            particle.style.left = left + '%';
-            particle.style.animationDelay = delay + 's';
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.animationDuration = `${Math.random() * 10 + 10}s`; // 10-20s
             
+            const heartBefore = document.createElement('div');
+            heartBefore.classList.add('heart-shape');
+            heartBefore.style.transform = 'rotate(-45deg)';
+            heartBefore.style.left = '0';
+            
+            const heartAfter = document.createElement('div');
+            heartAfter.classList.add('heart-shape');
+            heartAfter.style.transform = 'rotate(45deg)';
+            heartAfter.style.right = '0';
+
+            const heartPoint = document.createElement('div');
+            heartPoint.classList.add('heart-point');
+            
+            // To make sure the hearts appear and disappear off-screen
+            particle.style.top = '100vh'; 
+
             document.getElementById('particles').appendChild(particle);
-            
-            setTimeout(() => {
+
+            particle.addEventListener('animationend', () => {
                 particle.remove();
-            }, 15000);
+            });
         }
 
-        // Create particles periodically
-        setInterval(createParticle, 2000);
-
-        // Add some interactive elements
-        //document.addEventListener('mousemove', function(e) {
-            //const hero = document.querySelector('.hero');
-            //const rect = hero.getBoundingClientRect();
-            
-            //if (e.clientY < rect.bottom) {
-                //const x = (e.clientX / window.innerWidth) * 100;
-                //const y = (e.clientY / window.innerHeight) * 100;
-                
-                //hero.style.background = `linear-gradient(135deg, 
-                    //rgba(255,182,193,${0.2 + x/1000}) 0%, 
-                    //rgba(255,218,185,${0.2 + y/1000}) 50%, 
-                    //rgba(240,248,255,0.3) 100%)`;
-            //}
-        //});
+        setInterval(createParticle, 300); // Create a new particle every 300ms
     </script>
 </body>
 </html>
