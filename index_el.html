@@ -455,8 +455,6 @@
         }
 
         /* Footer */
-
-        
         .footer {
             background: #5d4e37;
             color: #faf8f5;
@@ -469,26 +467,6 @@
             color: #d4a574;
             margin-bottom: 1rem;
             animation: heartbeat 1.5s ease-in-out infinite;
-        }
-
-        /* Style for the footer's container to enable Flexbox */
-        .footer .container {
-            display: flex;
-            flex-direction: column; /* Stack items vertically */
-            align-items: center;
-            position: relative; /* Needed for positioning the logo */
-        }
-
-        /* Style for the footer logo */
-        .footer-logo {
-            position: absolute;
-            bottom: 5px; /* Position from the bottom */
-            right: 5px;  /* Position from the right */
-        }
-
-        .footer-logo img {
-            height: 100px; /* Adjust the logo size as needed */
-            width: auto;
         }
 
         @keyframes heartbeat {
@@ -606,17 +584,14 @@
             <li><a href="#story">Our Story</a></li>
             <li><a href="#details">Details</a></li>
             <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#venue">Venue</a></li>
-            <li><a href="#gifts">Gifts</a></li>
-            <li><a href="#vienna">Vienna</a></li>
         </ul>
 
         <div class="lang-flags">
-    <a href="index.html"><img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English" class="flag-icon"></a>
-    <a href="index_de.html"><img src="https://flagicons.lipis.dev/flags/4x3/at.svg" alt="Austrian" class="flag-icon"></a>
-    <a href="index_hu.html"><img src="https://flagicons.lipis.dev/flags/4x3/hu.svg" alt="Hungarian" class="flag-icon"></a>
-    <a href="index_el.html"><img src="https://flagicons.lipis.dev/flags/4x3/gr.svg" alt="Greek" class="flag-icon"></a>
-</div>
+            <a href="?lang=en"><img src="flag_uk.png" alt="English" class="flag-icon"></a>
+            <a href="?lang=de"><img src="flag_at.png" alt="Austrian" class="flag-icon"></a>
+            <a href="?lang=hu"><img src="flag_hu.png" alt="Hungarian" class="flag-icon"></a>
+            <a href="?lang=el"><img src="flag_gr.png" alt="Greek" class="flag-icon"></a>
+        </div>
     </div>
 </nav>
 
@@ -673,7 +648,7 @@
                 </div>
                 
                 <div class="event-card">
-                    <i class="fas fa-user-tie"></i>
+                    <i class="fas fa-tshirt"></i>
                     <h3>Dress Code</h3>
                     <p><strong>Black Tie</strong></p>
                     <p>Tux or Dark Suit for Gentlemen,</p>
@@ -782,7 +757,7 @@
                         <p>Now, we're ready to take the next step in our journey together. We can't wait to celebrate with all of you - the friends and family who have made our story even more beautiful.</p>
                     </div>
                 <div class="story-image">
-                    <img src="gift.png" alt="gifts" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
+                    <img src="AA.jpg" alt="Angie and Akos's love story" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
                 </div>
                 </div>
             </div>
@@ -812,20 +787,15 @@
         </div>
     </section>
 
-   <footer class="footer">
-    <div class="container">
-        <div class="hearts">
-            <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+    <footer class="footer">
+        <div class="container">
+            <div class="hearts">
+                <i class="fas fa-heart"></i> <i class="fas fa-heart"></i> <i class="fas fa-heart"></i>
+            </div>
+            <p>We can't wait to celebrate with you!</p>
+            <p>&copy; 2025 Angie & Ákos</p>
         </div>
-        <p>We can't wait to celebrate with you!</p>
-        <p>&copy; 2025 Angie & Ákos</p>
-
-        <a href="#home" class="footer-logo">
-            <img src="logo.png" alt="Angie & Ákos Logo">
-        </a>
-    </div>
-</footer>
-
+    </footer>
 
     <script>
         // Smooth scrolling for navigation links
