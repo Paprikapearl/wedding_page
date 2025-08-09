@@ -94,6 +94,35 @@
         /* Pushes the content down from the top on mobile */
         padding-top: 20vh;
     }
+    }
+
+    /* Prevent horizontal overflow */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* iPhone specific fixes */
+@media screen and (max-width: 480px) {
+    .story-image img {
+        width: 250px !important;
+        height: 250px !important;
+        max-width: 90vw;
+        max-height: 90vw;
+    }
+    
+    .story-text {
+        padding: 0 10px;
+        width: 100%;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-content {
+        padding: 20vh 15px 0 15px;
+    }
 }
 
         @keyframes float {
