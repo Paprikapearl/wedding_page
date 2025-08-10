@@ -86,5 +86,6 @@
   "footer_p1": "Ανυπομονούμε να γιορτάσουμε μαζί σας!",
   "footer_p2": "© 2025 Angie & Ákos",
   "footer_logo_alt": "Λογότυπο Angie & Ákos",
-  "body_font": "'GFS Neohellenic', cursive"
+  "body_font": "GFS Neohellenic",
+  "header_font": "Meie Script"
 }

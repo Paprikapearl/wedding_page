@@ -57,7 +57,7 @@
   "photos_p": "Share photos you took at our wedding and look at our album: <a href=\"https://photos.app.goo.gl/EftXoiYpoWK8ggyP6\" target=\"_blank\" class=\"photo-button\"> Wedding Album</a>",
   "photos_img_alt": "Photos",
   "gifts_title": "Gifts",
-  "gifts_p1": "Your presence on our day is the greatest gift we could ask for. We are so excited to celebrate with you!",
+  "gifts_p1": "Your presence on our wedding day is the greatest gift we could ask for. We are so excited to celebrate with you!",
   "gifts_p2": "If you would like to honor us with a gift, we kindly ask for a financial contribution toward our future together, as we begin this next chapter of our lives.",
   "gifts_img_alt": "Gifts",
   "vienna_title": "Our Recommendations in Vienna",
@@ -86,5 +86,6 @@
   "footer_p1": "We can't wait to celebrate with you!",
   "footer_p2": "&copy; 2025 Angie & Ákos",
   "footer_logo_alt": "Angie & Ákos Logo",
-  "body_font": "cursive"
+  "body_font": "Cormorant Garamond",
+  "header_font": "Meie Script"
 }

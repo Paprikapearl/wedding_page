@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <title id="html-title">Angie & Ákos - Our Wedding</title>
     <link rel="icon" href="logo.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -62,10 +63,6 @@
             background: linear-gradient(135deg, #faf8f5 0%, #f4f1ea 100%);
             overflow-x: hidden;
             /* Font family will be set dynamically by JavaScript */
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Meie Script", cursive; /* Primary heading font, can be overridden per language if needed */
-            font-weight: 700;
         }
 
         /* Container for content width */
@@ -854,7 +851,9 @@
 
             // Set body font based on language
             document.body.style.fontFamily = data.body_font;
-
+            document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(el => {
+            el.style.fontFamily = data.header_font;
+            });
             // Update navigation links
             document.querySelector('[data-key="nav_home"]').textContent = data.nav_home;
             document.querySelector('[data-key="nav_story"]').textContent = data.nav_story;
