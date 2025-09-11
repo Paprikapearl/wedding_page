@@ -560,10 +560,10 @@
             </ul>
 
             <div class="lang-flags">
-                <img src="https://flagicons.lipis.dev/flags/4x3/gb.svg" alt="English" class="flag-icon" data-lang="en">
-                <img src="https://flagicons.lipis.dev/flags/4x3/at.svg" alt="Deutsch" class="flag-icon" data-lang="de">
-                <img src="https://flagicons.lipis.dev/flags/4x3/hu.svg" alt="Magyar" class="flag-icon" data-lang="hu">
-                <img src="https://flagicons.lipis.dev/flags/4x3/gr.svg" alt="Ελληνικά" class="flag-icon" data-lang="el">
+                <img src="https://flagicons.lips.dev/flags/4x3/gb.svg" alt="EN" class="flag-icon" data-lang="en">
+                <img src="https://flagicons.lips.dev/flags/4x3/at.svg" alt="DE" class="flag-icon" data-lang="de">
+                <img src="https://flagicons.lips.dev/flags/4x3/hu.svg" alt="HU" class="flag-icon" data-lang="hu">
+                <img src="https://flagicons.lips.dev/flags/4x3/gr.svg" alt="GR" class="flag-icon" data-lang="el">
             </div>
         </div>
     </nav>
@@ -824,7 +824,7 @@
 
             // Set body font based on language
             document.body.style.fontFamily = data.body_font;
-            document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(el => {
+            document.querySelectorAll('h2, h3, h4, h5, h6').forEach(el => {
             el.style.fontFamily = data.body_font;
             });
             document.querySelector('[data-key="h1"]').textContent = data.header_font;
