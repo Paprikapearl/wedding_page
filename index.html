@@ -766,7 +766,7 @@
                         <p data-key="vienna_food_drinks_intro">If you want to try Austrian cousine, the best way is in a traditional coffee house or a winery. Thus, for restaurants, we focussed on our everyday favourites featuring international cousine.</p>
                         <h3 data-key="vienna_coffee_h3">Coffee</h3>
                         <ul>
-                            <li data-key="vienna_coffee1"><strong><a href="https://maps.app.goo.gl/pL2f7E8qP8fC3tF47" target="_blank" rel="noopener noreferrer">Cafe Diglas im Schottenstift</a></strong> Ákos' favourite classic coffee house.</li>
+                            <li data-key="vienna_coffee1"><strong><a href="https://maps.app.goo.gl/ba6hJ2RiGEq19z6G6" target="_blank" rel="noopener noreferrer">Cafe Diglas im Schottenstift</a></strong> Ákos' favourite classic coffee house.</li>
                             <li data-key="vienna_coffee2"><strong><a href="https://maps.app.goo.gl/Dp8ZSh94BRTcNb7C8" target="_blank" rel="noopener noreferrer">Goldener Papagei</a></strong> Angie's favourite contemporary Café.</li>
                         </ul>
                         <h3 data-key="vienna_wineries_h3">Wineries</h3>
@@ -830,7 +830,7 @@
             document.querySelectorAll('h2, h3, h4, h5, h6').forEach(el => {
             el.style.fontFamily = data.body_font;
             });
-            document.querySelector('[data-key="h1"]').textContent = data.header_font;
+            document.querySelector('[data-key="h1"]').fontFamily = data.header_font;
 
             // Update navigation links
             document.querySelector('[data-key="nav_home"]').textContent = data.nav_home;
@@ -906,7 +906,6 @@
             document.querySelector('[data-key="gifts_title"]').textContent = data.gifts_title;
             document.querySelector('[data-key="gifts_p1"]').textContent = data.gifts_p1;
             document.querySelector('[data-key="gifts_p2"]').textContent = data.gifts_p2;
-            document.querySelector('[data-key="gifts_img_alt"]').alt = data.gifts_img_alt;
 
 
             // Update Vienna Recommendations section
@@ -939,7 +938,6 @@
             // Update Footer
             document.querySelector('[data-key="footer_p1"]').textContent = data.footer_p1;
             document.querySelector('[data-key="footer_p2"]').innerHTML = data.footer_p2;
-            document.querySelector('[data-key="footer_logo_alt"]').alt = data.footer_logo_alt;
         }
 
         // Event listener for language flags
