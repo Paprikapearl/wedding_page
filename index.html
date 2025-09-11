@@ -178,22 +178,25 @@
             align-items: center;
         }
 
-        /* Language flags */
-        .lang-flags {
+        /* Language selector - text based */
+        .lang-selector {
             display: flex;
-            gap: 10px;
+            gap: 15px;
         }
 
-        .flag-icon {
-            width: 25px;
-            height: auto;
-            border-radius: 3px;
-            cursor: pointer; /* Indicate clickability */
-            transition: transform 0.2s ease;
+        .lang-link {
+            color: #000000;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            padding: 5px 8px;
+            border-radius: 4px;
         }
 
-        .flag-icon:hover {
-            transform: scale(1.1);
+        .lang-link:hover {
+            color: #b5c8ca;
+            background-color: rgba(181, 200, 202, 0.1);
         }
 
         .nav ul {
@@ -559,11 +562,11 @@
                 <li><a href="#vienna" data-key="nav_vienna">Vienna</a></li>
             </ul>
 
-            <div class="lang-flags">
-                <img src="https://flagicons.lips.dev/flags/4x3/gb.svg" alt="EN" class="flag-icon" data-lang="en">
-                <img src="https://flagicons.lips.dev/flags/4x3/at.svg" alt="DE" class="flag-icon" data-lang="de">
-                <img src="https://flagicons.lips.dev/flags/4x3/hu.svg" alt="HU" class="flag-icon" data-lang="hu">
-                <img src="https://flagicons.lips.dev/flags/4x3/gr.svg" alt="GR" class="flag-icon" data-lang="el">
+            <div class="lang-selector">
+                <a href="#" class="lang-link" data-lang="en">EN</a>
+                <a href="#" class="lang-link" data-lang="de">DE</a>
+                <a href="#" class="lang-link" data-lang="hu">HU</a>
+                <a href="#" class="lang-link" data-lang="el">GR</a>
             </div>
         </div>
     </nav>
@@ -724,7 +727,7 @@
         <div class="container">
             <h2 data-key="gifts_title">Gifts</h2>
             <div class="story">
-                    <div class="story-text">
+                    <div class="story-text" style="text-align:center">
                         <p data-key="gifts_p1">Your presence on our wedding day is the greatest gift we could ask for. We are so excited to celebrate with you!</p>
                         <p data-key="gifts_p2">If you would like to honor us with a gift, we kindly ask for a financial contribution toward our future together, as we begin this next chapter of our lives.</p>
                     </div>
