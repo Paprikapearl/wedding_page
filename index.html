@@ -9,8 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Meie+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&family=Meie+Script&display=swap" rel="stylesheet">
     <style>
         /* Base styles */
         * {
@@ -19,36 +18,19 @@
             box-sizing: border-box;
         }
         
+        a {
+            text-decoration: none;
+        }
         /* Font definitions - loading all of them for dynamic application */
         .meie-script-regular {
             font-family: 'Meie Script', cursive;
             font-weight: 400;
             font-style: normal;
         }
-        .tangerine-regular {
-            font-family: "Tangerine", cursive;
-            font-weight: 400;
-            font-style: normal;
-        }
-        .tangerine-bold {
-            font-family: "Tangerine", cursive;
-            font-weight: 700;
-            font-style: normal;
-        }
-        .gfs-neohellenic-regular-italic {
-            font-family: "GFS Neohellenic", sans-serif;
+        .eb-garamond-italic {
+            font-family: "EB Garamond", sans-serif;
             font-weight: 400;
             font-style: italic;
-        }
-        .dancing-script-regular {
-            font-family: 'Dancing Script', cursive;
-            font-weight: 400;
-            font-style: normal;
-        }
-        .cormorant-garamond-regular {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 400;
-            font-style: normal;
         }
 
         /* Link styling */
@@ -284,13 +266,13 @@
 
         /* Our Story */
         .story {
-            background: rgba(250, 248, 245, 0.9);
+            background: #ffffff;
             border-radius: 20px;
             padding: 3rem;
             margin: 2rem 0;
-            box-shadow: 0 10px 30px rgba(139, 115, 85, 0.1);
+            box-shadow: 0 10px 30px #ffffff;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 165, 116, 0.2);
+            border: 1px solid #ffffff;
         }
 
         .story-content {
@@ -728,7 +710,7 @@
                 <div class="story-content">
                     <div class="story-text">
                         <h3 data-key="photos_h3">Add Your Photos</h3>
-                        <p data-key="photos_p">Share photos you took at our wedding and look at our album: <a href="https://photos.app.goo.gl/EftXoiYpoWK8ggyP6" target="_blank" class="photo-button"> Wedding Album</a></p>
+                        <p data-key="photos_p">Share photos you took at our wedding and look at our album: <strong><a href="https://photos.app.goo.gl/EftXoiYpoWK8ggyP6" target="_blank" class="photo-button"> Wedding Album</a></strong></p>
                     </div>
                     <div class="story-image">
                         <img src="AA Wedding.jpg" data-key="photos_img_alt" alt="Photos" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
@@ -742,15 +724,10 @@
         <div class="container">
             <h2 data-key="gifts_title">Gifts</h2>
             <div class="story">
-                <div class="story-content">
                     <div class="story-text">
                         <p data-key="gifts_p1">Your presence on our wedding day is the greatest gift we could ask for. We are so excited to celebrate with you!</p>
                         <p data-key="gifts_p2">If you would like to honor us with a gift, we kindly ask for a financial contribution toward our future together, as we begin this next chapter of our lives.</p>
                     </div>
-                    <div class="story-image">
-                        <img src="wedding.png" data-key="gifts_img_alt" alt="The Palais" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -848,8 +825,10 @@
             // Set body font based on language
             document.body.style.fontFamily = data.body_font;
             document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(el => {
-            el.style.fontFamily = data.header_font;
+            el.style.fontFamily = data.body_font;
             });
+            document.querySelector('[data-key="h1"]').textContent = data.header_font;
+
             // Update navigation links
             document.querySelector('[data-key="nav_home"]').textContent = data.nav_home;
             document.querySelector('[data-key="nav_story"]').textContent = data.nav_story;
