@@ -126,6 +126,7 @@
             margin-bottom: 1rem;
             color: #ffffff;
             font-weight: 300;
+            font-family: 'Meie Script', cursive;
         }
 
         .hero .date {
@@ -830,7 +831,6 @@
             document.querySelectorAll('h2, h3, h4, h5, h6').forEach(el => {
             el.style.fontFamily = data.body_font;
             });
-            document.querySelector('[data-key="h1"]').fontFamily = data.header_font;
 
             // Update navigation links
             document.querySelector('[data-key="nav_home"]').textContent = data.nav_home;
@@ -941,17 +941,19 @@
         }
 
         // Event listener for language flags
-        document.querySelectorAll('.flag-icon').forEach(flag => {
-            flag.addEventListener('click', async function() {
-                const lang = this.dataset.lang;
+        document.querySelectorAll('.lang-link').forEach(link => {
+            link.addEventListener('click', async (e) => {
+                e.preventDefault();
+                const lang = link.dataset.lang;
                 const data = await fetchLanguageData(lang);
-                if (data) {
-                    langData[lang] = data; // Cache data
-                    applyLanguage(data);
-                    // Store selected language in local storage for persistence
-                    localStorage.setItem('preferredLang', lang);
-                }
+                applyLanguage(data);
             });
+        });
+
+        // Load default language on page load
+        window.addEventListener('DOMContentLoaded', async () => {
+            const data = await fetchLanguageData("en"); // default language
+        applyLanguage(data);
         });
 
         // Smooth scrolling for navigation links
