@@ -54,7 +54,7 @@
   "venue_p3": "When you arrive at the venue take the main staircase to the left of the entrance to the second floor (there will be signs).",
   "photos_title": "Photos",
   "photos_h3": "Add Your Photos",
-  "photos_p": "Share photos you took at our wedding and look at our album: <a href=\"https://photos.app.goo.gl/EftXoiYpoWK8ggyP6\" target=\"_blank\" class=\"photo-button\"> Wedding Album</a>",
+  "photos_p": "Share photos you took at our wedding and look at our album: <strong><a href=\"https://photos.app.goo.gl/EftXoiYpoWK8ggyP6\" target=\"_blank\" class=\"photo-button\"> Wedding Album</a></strong>",
   "photos_img_alt": "Photos",
   "gifts_title": "Gifts",
   "gifts_p1": "Your presence on our wedding day is the greatest gift we could ask for. We are so excited to celebrate with you!",
